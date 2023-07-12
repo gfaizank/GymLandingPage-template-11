@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzFitness - The best fitness gym in the town</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body  class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">FizzFitness</div>
+                <ul class="navbar flex items-center">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main id="home" class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="dumbellimg" src="dumbell.png" alt="">
+                        </div>
+                        <h1 id="about" class="my-1 text-center">The best fitness Gym in the town is here</h1>
+                        <p class=" text-center">What makes Fizz Fitness the best gym in the town? Fizz Fitness offers a personalized, accessible, and inclusive place for your workout!
+
+                            Offering the opportunity to stay healthy to people from all walks of life, Fizz Fitness offers best of the equipments and the latest fitness trends to keep you motivated, no matter your level of fitness.</p>
+                            <!-- Display the countdown timer in an element -->
+                            <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Join now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="gymimg" src="gym.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="services" class="section2">
+                <h1 class="text-center my-2">Pricing</h1>
+                <p class="my-2">We believe in providing affordable fitness options for everyone. Our pricing plans are designed to suit your needs and budget, offering flexible membership options starting from just ₹1000 per month. Take a look at the table below to compare our plans and find the perfect fit for your fitness journey.</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Basic</h2>
+                        <ul>
+                            <li class="highlighted">₹1000/month</li>
+                            <li>1 person included</li>
+                            <li>Convenient Parking</li>
+                            <li>General Trainer support</li>
+                            <li>Common Locker access</li>
+                            <li><button class="btn">Join Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li class="highlighted">₹2000/month</li>
+                            <li>1 person included</li>
+                            <li>Convenient Parking</li>
+                            <li>Personal Trainer support</li>
+                            <li>Personal Locker access</li>
+                            <li><button class="btn">Join Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Group</h2>
+                        <ul>
+                            <li class="highlighted">₹1700/month</li>
+                            <li>1 couple included</li>
+                            <li>Convenient Parking</li>
+                            <li>General Trainer support</li>
+                            <li>Common Locker access</li>
+                            <li><button class="btn">Join Now</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th></th><th>Basic</th>
+                          <th>Pro</th>
+                          <th>Group</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Cardio Access</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Personal Training</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>-</svg></td>
+                        </tr>
+                      </tbody>
+              
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Restrooms</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Discounts on Supplements</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Health Plans</th>
+                          <td>General</td>
+                          <td>Personalized</svg></td>
+                          <td>General</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Extra security</th>
+                          <td>-</td>
+                          <td>Yes</td>
+                          <td>-</svg></td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </section>
+            <hr>
+            <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3><i class="fas fa-envelope email-icon" style="color: rgb(227 74 56); font-size: 10; margin-right: 5px;"></i> Email</h3>
+                    <p>xyz@gmail.com</p>
+                </div>
+                <div class="contact-info">
+                    <h3><i class="fas fa-phone" style="color: rgb(227 74 56); font-size: 10; margin-right: 5px;"></i> Phone</h3>
+                    <p>xxxxxx3471</p>
+                </div>
+                <div class="contact-info">
+                    <h3><i class="fas fa-map-marker-alt location-icon" style="color: rgb(227 74 56); font-size: 10; margin-right: 5px;"></i> Location</h3>
+                    <p>abc, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+            
+        </main>
+        <footer>
+            Copyright &copy; FizzFitness.com | All rights reserved
+        </footer>
+
+    </div>
+</body>
+
+</html>
